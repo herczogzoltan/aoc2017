@@ -1,7 +1,6 @@
 package aoc
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -11,8 +10,6 @@ func (d Day1) FirstPart() int {
 	var sum int
 	firstNum, _ := strconv.Atoi(string(d.Input[0]))
 	lastNum, _ := strconv.Atoi(string(d.Input[len(d.Input)-1]))
-	fmt.Println("firstNum:", firstNum)
-	fmt.Println("lastNum:", lastNum)
 
 	if firstNum == lastNum {
 		sum += firstNum
@@ -27,7 +24,6 @@ func (d Day1) FirstPart() int {
 		}
 
 	}
-	fmt.Println("sum:", sum)
 
 	return sum
 }
